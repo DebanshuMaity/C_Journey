@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main()
 {
-    int a = 56;
-    int b = 74;
+    int a = 200;
+    int b = 50;
     printf("Addition = %d\n", a+b);
     printf("Subtraction = %d\n", a-b);
     printf("Multiplication = %d\n", a*b);
