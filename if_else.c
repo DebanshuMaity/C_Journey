@@ -1,17 +1,17 @@
 #include <stdio.h>
 int main()
 {
-    int age;
-    printf("Enter your age: ");
-    scanf("%d", &age);
+    int marks;
+    printf("Enter your marks: ");
+    scanf("%d", &marks);
 
-    if (age >= 18)
+    if (marks >= 50)
     {
-        printf("You are eligible to vote.\n");
+        printf("You PASSED.\n");
     }
     else
     {
-        printf("You are not eligible to vote.\n");
+        printf("You FAILED.\n");
     }
     return 0;
 }
