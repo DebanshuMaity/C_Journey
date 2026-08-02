@@ -2,33 +2,21 @@
 int main()
 {
     int marks;
+    int attendance;
 
-    printf("Enter the Marks: ");
+    printf("Enter Your Marks : \n");
     scanf("%d", &marks);
-
-    if (marks < 0 || marks > 100)
+    printf("Enter Attendance : \n");
+    scanf("%d", &attendance);
+    
+    if ( marks >= 40  && attendance >=75 )
     {
-        printf("Invalid Marks!\n");
+        printf("Marks :%d\n", marks);
+        printf("Attendance :%d\n", attendance);
     }
-    else if ( marks >= 90)
+    else
     {
-        printf("Grade A");
-    }
-    else if (marks >= 80)
-    {
-        printf("Grade B");
-    }
-    else if ( marks >= 70)
-    {
-        printf("Grade C");
-    }
-    else if ( marks >= 60)
-    {
-        printf("Grade D");
-    }
-    else if ( marks >= 0)
-    {
-        printf("Grade F");
+        printf("You Fail");
     }
     return 0;
 }
