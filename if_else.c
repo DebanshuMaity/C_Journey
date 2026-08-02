@@ -1,23 +1,16 @@
 #include <stdio.h>
 int main()
 {
-    int age;
-    char sol;
-    printf(" Enter age: ");
-    scanf("%d", &age);
-    printf("Are you a Student (Y/N): ");
-    scanf(" %c", &sol);
-    if (age >= 65 || sol == 'Y')
+    int isOpen;
+    printf("Is the shop open (1/0): ");
+    scanf("%d", &isOpen);
+    if (!isOpen)
     {
-        printf("Discount Approved\n");
-    }
-    else if ( sol == 'N')
-    {
-        printf("Discount Not Approved\n");
+        printf("Shop is closed\n");
     }
     else
     {
-        printf("Discount Not Approved");
+        printf("Shop is Open\n");
     }
     return 0;
 }
