@@ -2,16 +2,21 @@
 int main()
 {
     int marks;
-    printf("Enter your marks: ");
+
+    printf("Enter the Marks: ");
     scanf("%d", &marks);
 
-    if (marks >= 50)
+    if (marks >= 90)
     {
-        printf("You PASSED.\n");
+        printf("Grade A\n");
+    }
+    else if (marks >= 75)
+    {
+        printf("Grade B\n");
     }
     else
     {
-        printf("You FAILED.\n");
+        printf("Grade C.\n");
     }
     return 0;
 }
