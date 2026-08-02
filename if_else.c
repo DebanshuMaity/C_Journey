@@ -9,15 +9,15 @@ int main()
     scanf(" %c", &sol);
     if (age >= 65 || sol == 'Y')
     {
-        printf("Approved\n");
+        printf("Discount Approved\n");
     }
     else if ( sol == 'N')
     {
-        printf("Not Approved\n");
+        printf("Discount Not Approved\n");
     }
     else
     {
-        printf("Not Approved");
+        printf("Discount Not Approved");
     }
     return 0;
 }
