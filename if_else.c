@@ -1,22 +1,23 @@
 #include <stdio.h>
 int main()
 {
-    int marks;
-    int attendance;
-
-    printf("Enter Your Marks : \n");
-    scanf("%d", &marks);
-    printf("Enter Attendance : \n");
-    scanf("%d", &attendance);
-    
-    if ( marks >= 40  && attendance >=75 )
+    int age;
+    char sol;
+    printf(" Enter age: ");
+    scanf("%d", &age);
+    printf("Are you a Student (Y/N): ");
+    scanf(" %c", &sol);
+    if (age >= 65 || sol == 'Y')
     {
-        printf("Marks :%d\n", marks);
-        printf("Attendance :%d\n", attendance);
+        printf("Approved\n");
+    }
+    else if ( sol == 'N')
+    {
+        printf("Not Approved\n");
     }
     else
     {
-        printf("You Fail");
+        printf("Not Approved");
     }
     return 0;
 }
