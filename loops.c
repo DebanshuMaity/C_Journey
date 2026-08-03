@@ -4,7 +4,8 @@ int main()
     int i = 10;
     do
     {
-        printf("Hello\n");
+        printf("%d\n", i);
+        i--;
     }
-    while (i<5);    
+    while (i>=1);
 }
