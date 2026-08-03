@@ -1,11 +1,11 @@
 #include <stdio.h>
 int main()
 {
-    int i=10;
-    while (i>=1)
+    int i=2;
+    while (i<=20)
     {
         printf("%d\n", i);
-        i = i-1;
+        i = i+2;
     }
     return 0;
 }
