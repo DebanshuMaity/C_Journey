@@ -4,7 +4,7 @@ int main()
     int num,i;
     int pro =1;
     printf("Enter a number: ");
-    scanf("%d", num);
+    scanf("%d", &num);
     for (i=1; i<=num; i++)
     {
         pro = i*pro; 
