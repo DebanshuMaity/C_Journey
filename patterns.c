@@ -2,12 +2,13 @@
 int main()
 {
     int i,j;
-    for (i=1; i<=5; i++)
+    int num = 0;
+    for (i = 1; i<=5; i++)
     {
-        for ( j=1;j<=i; j++ )
+        for (j=1; j<=i ;j++ )
         {
-            printf("%d", i);
-            
+            num = num + 1;
+            printf("%d",num);
         }
         printf("\n");
     }
