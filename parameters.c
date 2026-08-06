@@ -1,11 +1,20 @@
 #include <stdio.h>
 
-void multiply(int x, int y)
-{
-    printf("%d\n", x*y);
-}
+void max(int x,int y);
 int main()
 {
-    multiply(7 , 8);
+    max(45,56);
     return 0;
+}
+    
+void max(int x,int y)
+{
+    if (x>y)
+    {
+        printf("x is greater than y");
+    }
+    else
+    {
+        printf("y is greater than x");
+    }
 }
