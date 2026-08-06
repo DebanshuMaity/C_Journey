@@ -1,20 +1,22 @@
 #include <stdio.h>
 
-void max(int x,int y);
+void checkevenodd(int x);
 int main()
 {
-    max(45,56);
+    int x;
+    printf("your no: \n");
+    scanf("%d",&x);
+    checkevenodd(x);
     return 0;
 }
-    
-void max(int x,int y)
+void checkevenodd(int x)
 {
-    if (x>y)
+    if (x%2==0)
     {
-        printf("x is greater than y");
+        printf("even");
     }
     else
     {
-        printf("y is greater than x");
+        printf("odd");
     }
 }
