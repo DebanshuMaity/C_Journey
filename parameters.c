@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-void add(int x, int y)
+void multiply(int x, int y)
 {
-    printf("%d\n", x+y);
+    printf("%d\n", x*y);
 }
 int main()
 {
-    add(7 , 8);
+    multiply(7 , 8);
     return 0;
 }
