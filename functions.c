@@ -3,10 +3,14 @@ void greet()
 {
     printf("Hello World!\n");
 }
+ void bye()
+ {
+    printf("Goodbye\n");
+ }
 int main ()
 {
     greet();
-    greet();
+    bye();
     greet();
     return 0;
 }
