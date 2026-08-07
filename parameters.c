@@ -1,22 +1,19 @@
 #include <stdio.h>
 
-void checkevenodd(int x);
+void table(int n);
 int main()
 {
-    int x;
-    printf("your no: \n");
-    scanf("%d",&x);
-    checkevenodd(x);
+    int n;
+    printf("Give_no.: ");
+    scanf("%d", &n);
+    table(n);
     return 0;
 }
-void checkevenodd(int x)
+void table (int n)
 {
-    if (x%2==0)
+    int i;
+    for (i=1; i<=10; i++)
     {
-        printf("even");
-    }
-    else
-    {
-        printf("odd");
+        printf("%d x %d = %d\n",n,i, n*i);
     }
 }
