@@ -8,14 +8,14 @@ int main()
     {
         scanf("%d",&numbers[i]);
     }
-    int largest = numbers[0];
+    int smallest = numbers[0];
     for (i=1; i<5; i++)
     {
-        if (numbers[i]> largest)
+        if (numbers[i]< smallest)
         {
-            largest = numbers[i];
+            smallest = numbers[i];
         }
     
     }
-    printf("largest number is = %d", largest);
+    printf("smallest number is = %d", smallest);
 }
