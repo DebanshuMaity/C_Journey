@@ -8,14 +8,12 @@ int main()
     {
         scanf("%d",&numbers[i]);
     }
-    int smallest = numbers[0];
+    float sum, average;
+    sum = 0;
     for (i=1; i<5; i++)
     {
-        if (numbers[i]< smallest)
-        {
-            smallest = numbers[i];
-        }
-    
+        sum = sum + numbers[i]; 
     }
-    printf("smallest number is = %d", smallest);
+    average = sum /5;
+    printf(" average is = %.2f", average);
 }
