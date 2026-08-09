@@ -2,18 +2,26 @@
 int main()
 {
     int numbers[5];
-    int i;
+    int i,even,odd;
     printf("Array Numbers = \n ");
     for (i=0; i<5;i++)
     {
         scanf("%d",&numbers[i]);
     }
-    float sum, average;
-    sum = 0;
+    even = 0;
+    odd = 0;
     for (i=0; i<5; i++)
     {
-        sum = sum + numbers[i]; 
+        if (numbers[i]%2==0)
+        {
+            even = even +1;
+        }
+        else
+        {
+            odd = odd +1;
+        }
     }
-    average = sum /5;
-    printf(" average is = %.2f", average);
+    printf("no. of even numbers = %d\n", even);
+    printf("no. of even numbers = %d", odd);
+    return 0;   
 }
