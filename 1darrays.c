@@ -10,7 +10,7 @@ int main()
     }
     float sum, average;
     sum = 0;
-    for (i=1; i<5; i++)
+    for (i=0; i<5; i++)
     {
         sum = sum + numbers[i]; 
     }
