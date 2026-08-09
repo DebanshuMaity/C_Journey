@@ -2,7 +2,8 @@
 int numbers[5];
 int main()
 {
-    int i;
+    int i,sum;
+    sum = 0;
     printf("The array Numbers\n");
     for (i=0;i<5;i++)
     {
@@ -10,7 +11,8 @@ int main()
     }
     for (i=0;i<5;i++)
     {
-        printf("%d ", numbers[i]);
+         sum = sum + numbers[i];
     }
+    printf("Sum of the arrays = %d ", sum);
     return 0;
 }
