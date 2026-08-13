@@ -11,14 +11,14 @@ int main()
             scanf("%d",&numbers[i][j]);
         }
     }
-    for (i=0;i<2;i++)
+    for (j=0;j<3;j++)
     {
         int sum = 0;
-        for (j=0; j<3; j++)
+        for (i=0; i<2; i++)
         {
            sum = sum + numbers[i][j];
         }
-        printf("row = %d, sum = %d\n",i,sum);        
+        printf("column = %d, sum = %d\n",j,sum);        
     }   
     return 0;
 }
