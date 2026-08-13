@@ -11,18 +11,18 @@ int main()
             scanf("%d",&numbers[i][j]);
         }
     }
-    int largest = numbers[0][0];
+    int smallest = numbers[0][0];
     for (i=0;i<2;i++)
     {
         for (j=0; j<3; j++)
         {
-           if (numbers[i][j]> largest)
+           if (numbers[i][j]< smallest)
            {
-              largest = numbers[i][j];
+              smallest = numbers[i][j];
            }
         }
         
     }
-    printf("largest = %d", largest);    
+    printf("smallest = %d", smallest);    
     return 0;
 }
