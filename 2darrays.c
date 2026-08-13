@@ -3,6 +3,7 @@ int main()
 {
     int numbers[2][3];
     int i,j;
+    int sum = 0;
     printf("Array Number:\n");
     for (i=0;i<2;i++)
     {
@@ -15,10 +16,10 @@ int main()
     {
         for (j=0; j<3; j++)
         {
-            printf("%d ",numbers[i][j]);
+           sum = sum + numbers [i][j];
         }
-        printf("\n");
+        
     }
-    
+    printf("sum = %d", sum);    
     return 0;
 }
