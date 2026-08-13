@@ -3,7 +3,6 @@ int main()
 {
     int numbers[2][3];
     int i,j;
-    int sum = 0;
     printf("Array Number:\n");
     for (i=0;i<2;i++)
     {
@@ -12,14 +11,18 @@ int main()
             scanf("%d",&numbers[i][j]);
         }
     }
+    int largest = numbers[0][0];
     for (i=0;i<2;i++)
     {
         for (j=0; j<3; j++)
         {
-           sum = sum + numbers [i][j];
+           if (numbers[i][j]> largest)
+           {
+              largest = numbers[i][j];
+           }
         }
         
     }
-    printf("sum = %d", sum);    
+    printf("largest = %d", largest);    
     return 0;
 }
