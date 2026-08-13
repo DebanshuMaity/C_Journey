@@ -11,18 +11,14 @@ int main()
             scanf("%d",&numbers[i][j]);
         }
     }
-    int smallest = numbers[0][0];
     for (i=0;i<2;i++)
     {
+        int sum = 0;
         for (j=0; j<3; j++)
         {
-           if (numbers[i][j]< smallest)
-           {
-              smallest = numbers[i][j];
-           }
+           sum = sum + numbers[i][j];
         }
-        
-    }
-    printf("smallest = %d", smallest);    
+        printf("row = %d, sum = %d\n",i,sum);        
+    }   
     return 0;
 }
