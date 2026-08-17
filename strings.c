@@ -2,26 +2,25 @@
 #include <string.h>
 int main()
 {
+    char word[51];
     int i;
-    int palindrome = 1;
-    char words[51];
-    scanf("%50s", words);
-    printf("%s\n", words);
-    for (i= 0; i< (strlen(words)/2) ;i++)
+    int m = 0;
+    int n = 0;
+    printf("give the word\n");
+    scanf("%s", word);
+    for (i=0; i<= strlen(word)-1;i++)
     {
-        if (words[i]!= words[strlen(words)-1-i])
+        if (word[i]== 'a' || word[i]== 'e' || word[i]== 'i' || word[i]== 'o' ||word[i]== 'u' )
         {
-            palindrome = 0;
-        }       
+            n++;
+        }
+        else
+        {
+            m++;
+        }
+                
     }
-    if (palindrome == 1)
-    {
-        printf("It's a palindrome");
-    }
-    else
-    {
-        printf("It's not a palindrome");
-    }
+    printf("no. of vowels = %d\nno. of consonants = %d", n,m);
     return 0;
 
 }
