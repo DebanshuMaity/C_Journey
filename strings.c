@@ -2,12 +2,21 @@
 #include <string.h>
 int main()
 {
+    int i;
+    int number = 0;
+    char target;
     char words[51];
-    scanf("%50s", words);
+    scanf("%50s", &words);
     printf("%s\n", words);
-    printf("first word = %c\n",words[0]);
-    printf("length of word = %zu\n", strlen(words));
-    printf("last word = %c", words[strlen(words)-1]);
+    scanf(" %c", &target);
+    for (i=0; words[i]!='\0';i++)
+    {
+        if (target == words[i])
+        {
+            number++;
+        }
+    }
+    printf("no. of time it appeared = %d", number);
     return 0;
 
 }
