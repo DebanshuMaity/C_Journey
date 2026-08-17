@@ -8,15 +8,14 @@ int main()
     char words[51];
     scanf("%50s", &words);
     printf("%s\n", words);
-    scanf(" %c", &target);
     for (i=0; words[i]!='\0';i++)
     {
-        if (target == words[i])
+        if (words[i]== 'a' || words[i]== 'e' || words[i]== 'i' || words[i]== 'o' || words[i]== 'u' )
         {
             number++;
         }
     }
-    printf("no. of time it appeared = %d", number);
+    printf("no. of time vowels appeared = %d", number);
     return 0;
 
 }
