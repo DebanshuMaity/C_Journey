@@ -2,10 +2,12 @@
 #include <string.h>
 int main()
 {
-    int a;
-    char words[6];
-    scanf("%5s", words);
+    char words[51];
+    scanf("%50s", words);
     printf("%s\n", words);
-    printf("length of word = %zu", strlen(words));
+    printf("first word = %c\n",words[0]);
+    printf("length of word = %zu\n", strlen(words));
+    printf("last word = %c", words[strlen(words)-1]);
+    return 0;
 
 }
