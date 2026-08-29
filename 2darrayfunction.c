@@ -1,15 +1,20 @@
 #include <stdio.h>
-void display(int r,int c,int arr[r][c])
+int max(int r,int c,int arr[r][c])
 {
     int i,j;
+    int largest = arr[0][0];
+    
     for (i=0;i<r;i++)
     {
         for (j=0;j<c;j++)
         {
-            printf("%d ",arr[i][j]);
+            if (largest<arr[i][j])
+            {
+                largest = arr[i][j];
+            }            
         }
-        printf("\n");
     }
+    return largest;
 }
 int main()
 {
@@ -22,8 +27,10 @@ int main()
         for (j=0;j<c;j++)
         {
             scanf("%d",&numbers[i][j]);
+            printf("%d ",numbers[i][j]);
         }
+        printf("\n");
     }
-    display(r,c,numbers);
+    printf("largest is %d",max(r,c,numbers));
     return 0;
 }
