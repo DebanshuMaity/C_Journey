@@ -1,24 +1,24 @@
 #include <stdio.h>
-int max(int r,int c,int arr[r][c])
+int search(int r,int c,int arr[r][c],int s)
 {
-    int i,j;
-    int largest = arr[0][0];
-    
+    int i,j;    
     for (i=0;i<r;i++)
     {
         for (j=0;j<c;j++)
         {
-            if (largest<arr[i][j])
             {
-                largest = arr[i][j];
+                if (s== arr[i][j])
+                {
+                    return 1;
+                }
             }            
         }
     }
-    return largest;
+    return 0;
 }
 int main()
 {
-    int i,j,r,c;
+    int i,j,r,c,s;
     printf("rows, column \n");
     scanf("%d %d",&r,&c);
     int numbers[r][c];
@@ -27,10 +27,19 @@ int main()
         for (j=0;j<c;j++)
         {
             scanf("%d",&numbers[i][j]);
-            printf("%d ",numbers[i][j]);
         }
         printf("\n");
     }
-    printf("largest is %d",max(r,c,numbers));
+    printf("number = ");
+    scanf("%d",&s);
+    int result = search(r,c,numbers,s);
+    if (result==1)
+    {
+        printf("Found");
+    }
+    else
+    {
+        printf("not found");
+    }
     return 0;
 }
